@@ -11,7 +11,7 @@ import { themeSettings } from "./theme.js";
 function App() {
   const mode = useSelector((state) => state.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
-  
+
   return (
     <div className="app">
       <BrowserRouter>
